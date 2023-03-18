@@ -7,6 +7,13 @@
     <version>1.0</version>
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
+    <distributionManagement>
+      <repository>
+        <id>msk-newrepo</id>
+        <name>msk-newrepo</name>
+        <url>https://msk-914838084400.d.codeartifact.eu-central-1.amazonaws.com/maven/newrepo/</url>
+       </repository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -15,13 +22,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-  <distributionManagement>
-  <repository>
-    <id>msk-newrepo</id>
-    <name>msk-newrepo</name>
-    <url>https://msk-914838084400.d.codeartifact.eu-central-1.amazonaws.com/maven/newrepo/</url>
-  </repository>
-</distributionManagement>
     <build>
         <plugins>
             <plugin>
